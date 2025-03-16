@@ -2,7 +2,7 @@
 
 A powerful visual CSS customization tool for [Gethomepage](https://github.com/gethomepage/homepage), featuring real-time preview and an intuitive interface for creating beautiful, responsive designs.
 
-![CSS Wizard Preview](https://github.com/user-attachments/assets/bd8487cc-5695-4ffc-b40f-8feccf613e26)
+https://github.com/user-attachments/assets/0c2c9f73-9fc4-44d1-aecc-7d6bdc5584c2
 
 ## ✨ Features
 
@@ -51,6 +51,22 @@ services:
   homepage-css-editor:
     container_name: Homepage-CSS-Editor
     image: ghcr.io/10mfox/gethomepage-custom-css:latest
+    ports:
+      - "5556:5556"
+    environment:
+      - PORT=5556
+    restart: unless-stopped
+```
+
+Alternative configuration for Linux systems:
+
+```yaml
+version: "3"
+services:
+  homepage-css-editor:
+    image: ghcr.io/10mfox/gethomepage-custom-css:latest
+    container_name: tautulli-api-manager
+    user: "1000:1000"  # Replace with your user ID and group ID	
     ports:
       - "5556:5556"
     environment:
