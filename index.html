@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Editor</title>
+    <meta name="description" content="CSS Wizard for Gethomepage - A powerful visual CSS customization tool" />
+    <meta name="theme-color" content="#1A1B26" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="Content-Security-Policy" 
+      content="default-src 'self'; 
+              img-src * data:;
+              style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com;
+              script-src 'self';
+              connect-src 'self' https://fonts.cdnfonts.com;">
+    
+    <!-- Standard favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
+    
+    <!-- iOS and Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Browser-specific favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Web App Manifest for PWA support -->
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Font preconnect -->
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" />
+    
+    <title>CSS Wizard for Gethomepage</title>
   </head>
   <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

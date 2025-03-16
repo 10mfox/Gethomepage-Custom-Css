@@ -1,70 +1,44 @@
-📁 Project Root
-├── 📄 Dockerfile
-├── 📄 package.json
-├── 📄 vite.config.js
-├── 📄 index.html
-├── 📄 tailwind.config.js
-├── 📄 postcss.config.js
-├── 📄 .gitignore
-├── 📄 README.md
-├── 📄 LICENSE
-├── 📄 .eslintrc.json
-├── 📄 .prettierrc
-├── 📄 .dockerignore
-├── 📄 compose.yaml
-└── 📁 src
-    ├── 📁 components
-    │   ├── 📁 actions
-    │   │   └── 📄 FileActions.jsx
-    │   │
-    │   ├── 📁 color
-    │   │   ├── 📄 ColorPicker.jsx
-    │   │   ├── 📄 ColorSettings.jsx
-    │   │   ├── 📄 PresetButton.jsx
-    │   │   ├── 📄 SavePresetDialog.jsx
-    │   │   ├── 📄 CustomPresets.jsx
-    │   │   ├── 📄 BuiltInPresets.jsx
-    │   │   ├── 📄 presets.js
-    │   │   └── 📄 index.js
-    │   │
-    │   ├── 📁 config
-    │   │   ├── 📄 ConfigProvider.jsx
-    │   │   ├── 📁 generators
-    │   │   │   ├── 📄 variables.js
-    │   │   │   ├── 📄 keyframes.js
-    │   │   │   └── 📄 styles.js
-    │   │   ├── 📁 constants
-    │   │   │   └── 📄 selectors.js
-    │   │   ├── 📁 element-styles
-    │   │   │   ├── 📄 baseStyles.js
-    │   │   │   ├── 📄 borderStyles.js
-    │   │   │   ├── 📄 interactiveStyles.js
-    │   │   │   ├── 📄 layoutStyles.js
-    │   │   │   ├── 📄 responsiveStyles.js
-    │   │   │   └── 📄 index.js
-    │   │   └── 📄 CSSGenerator.js
-    │   │
-    │   ├── 📁 layout
-    │   │   ├── 📄 Header.jsx
-    │   │   ├── 📄 MainContent.jsx
-    │   │   ├── 📄 GeneratedCSS.jsx
-    │   │   └── 📄 index.js
-    │   │
-    │   ├── 📁 preset
-    │   │   └── 📄 PresetManager.jsx
-    │   │
-    │   ├── 📁 preview
-    │   │   ├── 📄 LivePreview.jsx
-    │   │   └── 📄 index.js
-    │   │
-    │   ├── 📁 settings
-    │   │   ├── 📄 StyleSettings.jsx
-    │   │   ├── 📄 GeneralSettings.jsx
-    │   │   └── 📄 index.js
-    │   │
-    │   ├── 📄 PresetTogglesBar.jsx
-    │   └── 📄 index.js
+Project Root
+│   .dockerignore
+│   .eslintrc.json
+│   .prettierrc
+│   Dockerfile
+│   filestructure.txt
+│   index.html
+│   package.json
+│   postcss.config.js
+│   README.md
+│   tailwind.config.js
+│   vite.config.js
+│
+├───public
+│       android-chrome-192x192.png
+│       android-chrome-512x512.png
+│       apple-touch-icon.png
+│       favicon-16x16.png
+│       favicon-32x32.png
+│       favicon.ico
+│       site.webmanifest
+│
+└───src
+    │   App.jsx
+    │   index.css
+    │   main.jsx
     │
-    ├── 📄 App.jsx
-    ├── 📄 main.jsx
-    └── 📄 index.css
+    └───components
+        │   Toggles.jsx
+        │
+        ├───core
+        │       Actions.jsx
+        │       Config.jsx
+        │
+        ├───ui
+        │       ColorUI.jsx
+        │       Layout.jsx
+        │       Preview.jsx
+        │       Settings.jsx
+        │
+        └───utils
+                CSSGenerator.js
+                Presets.js
+                Styles.js

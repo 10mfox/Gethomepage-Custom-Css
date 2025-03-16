@@ -1,8 +1,8 @@
 # CSS Wizard for Gethomepage
 
-A powerful visual CSS customization tool for [Gethomepage](https://github.com/gethomepage/homepage), featuring real-time preview and an intuitive interface for creating beautiful, responsive designs. Customize your Gethomepage instance with ease using our interactive editor.
+A powerful visual CSS customization tool for [Gethomepage](https://github.com/gethomepage/homepage), featuring real-time preview and an intuitive interface for creating beautiful, responsive designs.
 
-![CSS-Wizard-11-14-2024_09_09_AM](https://github.com/user-attachments/assets/bd8487cc-5695-4ffc-b40f-8feccf613e26)
+![CSS Wizard Preview](https://github.com/user-attachments/assets/bd8487cc-5695-4ffc-b40f-8feccf613e26)
 
 ## ✨ Features
 
@@ -29,24 +29,6 @@ A powerful visual CSS customization tool for [Gethomepage](https://github.com/ge
 - Docker
 - Docker Compose (optional, but recommended)
 - A running instance of Gethomepage
-- logged in to github
-
-#### How to login to github
-I'll help you with logging into GitHub from Docker. Here's how to do it using personal access tokens (PATs), which is the recommended authentication method:
-
-First, create a GitHub Personal Access Token:
-
-Go to GitHub.com → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
-Click "Generate new token"
-Give it appropriate permissions (at minimum, read:packages and write:packages)
-Copy the generated token immediately (you won't be able to see it again)
-
-
-Log in to Docker using your GitHub credentials:
-
-```docker login ghcr.io -u YOUR_GITHUB_USERNAME```
-
-When prompted for password, enter your Personal Access Token (not your GitHub password)
 
 ### Installation Options
 
@@ -86,13 +68,6 @@ docker compose up -d
 
 - The port number in the container mapping (`ports`) must match the `PORT` environment variable
 - Choose any available port on your system
-- Example for port 5556:
-  ```yaml
-  ports:
-    - "5556:5556"
-  environment:
-    - PORT=5556
-  ```
 
 ## 🎨 Using the CSS Wizard
 
@@ -105,13 +80,11 @@ docker compose up -d
 2. **Configure Features**
    - Use the "Feature Toggles" dropdown to enable desired options
    - Options are grouped by function (borders, effects, appearance, etc.)
-   - Mutually exclusive options are automatically managed
 
 3. **Customize Styles**
    - Adjust general settings (font, border width, radius, backdrop filter)
    - Use color pickers for various elements
    - Configure static or animated gradient borders
-   - Set hover and focus effects
 
 4. **Manage Themes**
    - Try built-in presets from the dropdown
@@ -121,15 +94,6 @@ docker compose up -d
 5. **Preview and Export**
    - Use the live preview panel to verify changes
    - Export your configuration when satisfied
-
-### Feature Toggle Groups
-
-- **Static Border Elements**: Apply solid borders to widgets, tabs, cards, bookmarks
-- **Animated Border Elements**: Enable gradient rotating borders
-- **Hover Effects**: Configure static or animated hover states
-- **Focus Effects**: Set keyboard focus highlighting
-- **Appearance**: Control fonts, colors, backgrounds, backdrop filters
-- **Layout**: Adjust card titles alignment and footer visibility
 
 ## 💾 Saving & Loading
 
@@ -145,12 +109,6 @@ When saving your configuration, two files are generated:
 1. Save your configuration using the "Save CSS" button
 2. Copy the contents of `custom.css` to your Gethomepage custom CSS file
 3. Restart Gethomepage to apply changes
-
-### Loading Previous Configurations
-
-1. Click the "Load" button in the top navigation
-2. Select your previously saved `custom.css.json` file
-3. Your settings will be restored
 
 ## 🛠 Technical Details
 
@@ -183,15 +141,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 2. Install dependencies: `npm install`
 3. Start development server: `npm run dev`
 4. Build for production: `npm run build`
-
-## 🐛 Bug Reports
-
-If you find a bug, please create an issue with:
-- Detailed steps to reproduce
-- Expected behavior
-- Actual behavior
-- Screenshots (if applicable)
-- Browser and version information
 
 ---
 

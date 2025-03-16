@@ -1,12 +1,9 @@
 import React from 'react';
-import { Header } from './components/layout/Header';
-import { MainContent } from './components/layout/MainContent';
-import { useFileActions } from './components/actions/FileActions';
-import { usePresetManager } from './components/preset/PresetManager';
-import { SavePresetDialog } from './components/color/SavePresetDialog';
-import { ConfigProvider, useConfig } from './components/config/ConfigProvider';
-import { PresetTogglesBar } from './components/PresetTogglesBar';
-import { BUILT_IN_PRESETS } from './components/color/presets';
+import { Header, MainContent } from './components/ui/Layout';
+import { SavePresetDialog } from './components/ui/ColorUI';
+import { PresetTogglesBar } from './components/Toggles';
+import { ConfigProvider, useConfig } from './components/core/Config';
+import { useFileActions, usePresetManager } from './components/core/Actions';
 
 const AppContent = () => {
   const { 

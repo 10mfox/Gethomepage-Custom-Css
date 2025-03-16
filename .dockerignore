@@ -1,24 +1,45 @@
-**/.classpath
-**/.dockerignore
-**/.env
-**/.git
-**/.gitignore
-**/.project
-**/.settings
-**/.toolstarget
-**/.vs
-**/.vscode
-**/*.*proj.user
-**/*.dbmdl
-**/*.jfm
-**/charts
-**/docker-compose*
-**/compose*
-**/Dockerfile*
-**/node_modules
-**/npm-debug.log
-**/obj
-**/secrets.dev.yaml
-**/values.dev.yaml
-LICENSE
+# Node modules and dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Build files
+dist
+build
+.cache
+
+# Development and environment files
+.git
+.github
+.gitignore
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Documentation
 README.md
+LICENSE
+CHANGELOG.md
+docs
+
+# Testing and coverage files
+coverage
+.nyc_output
+test
+tests
+__tests__
+*.test.js
+*.spec.js
