@@ -1,4 +1,6 @@
-# CSS Wizard for Gethomepage
+### <div align="center">![android-chrome-192x192](https://github.com/user-attachments/assets/ab0a8e02-bc3e-4ca3-9d06-21acb1f218cc)</div>
+
+# <div align="center">CSS Wizard for Gethomepage</div>
 
 A powerful visual CSS customization tool for [Gethomepage](https://github.com/gethomepage/homepage), featuring real-time preview and an intuitive interface for creating beautiful, responsive designs.
 
