@@ -67,7 +67,7 @@ version: "3"
 services:
   homepage-css-editor:
     image: ghcr.io/10mfox/gethomepage-custom-css:latest
-    container_name: tautulli-api-manager
+    container_name: Homepage-CSS-Editor
     user: "1000:1000"  # Replace with your user ID and group ID	
     ports:
       - "5556:5556"
